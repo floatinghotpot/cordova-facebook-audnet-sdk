@@ -4,7 +4,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-facebook-audnet-sdk"
         version="5.1.0">
-      
+
   <name>Facebook AudienceNetwork SDK for Cordova</name>
   <description>Add Facebook SDK to Cordova porject, as dependency for other plugins</description>
   <author>Facebook</author>
@@ -21,14 +21,15 @@
   <platform name="android">
     <framework src="fb-adsdk.gradle" custom="true" type="gradleReference" />
     <framework src="com.android.support:recyclerview-v7:25.3.1"/>
-    <framework src="com.facebook.android:audience-network-sdk:5.+"/>
+    <framework src="com.facebook.android:audience-network-sdk:6.+"/>
     <framework src="com.google.android.gms:play-services-ads:+"/>
   </platform>
-     
+
   <platform name="amazon-fireos">
     <framework src="fb-adsdk.gradle" custom="true" type="gradleReference" />
     <framework src="com.android.support:recyclerview-v7:25.3.1"/>
-    <framework src="com.facebook.android:audience-network-sdk:5.+"/>
+    <framework src="androidx.annotation:annotation:1.0.0" />
+    <framework src="com.facebook.android:audience-network-sdk:6.+"/>
     <framework src="com.google.android.gms:play-services-ads:+"/>
   </platform>
 
